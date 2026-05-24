@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Derek's Chess</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#161514;color:#e0e0e0;font-family:'Segoe UI',sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:48px 20px}
+  h1{color:#81b64c;font-size:3em;margin-bottom:6px;letter-spacing:2px}
+  .sub{color:#888;font-size:1em;margin-bottom:32px}
+  h2{color:#d4af37;font-size:1.2em;margin-bottom:12px;border-bottom:1px solid #333;padding-bottom:6px}
+  .card{background:#262421;border-radius:14px;padding:28px 36px;max-width:740px;width:100%;margin:12px 0;box-shadow:0 4px 24px #0006}
+  .badge{display:inline-block;background:#81b64c;color:#161514;border-radius:6px;padding:3px 12px;font-weight:700;font-size:.85em;margin-right:8px}
+  table{width:100%;border-collapse:collapse;margin-top:8px}
+  td,th{padding:10px 14px;border-bottom:1px solid #2e2c29;text-align:left;font-size:.95em}
+  th{color:#d4af37;font-weight:600}
+  tr:last-child td{border-bottom:none}
+  a{color:#81b64c;text-decoration:none}
+  a:hover{text-decoration:underline}
+  .row{display:flex;gap:12px;flex-wrap:wrap}
+  .pill{background:#1e1d1b;border:1px solid #333;border-radius:20px;padding:6px 16px;font-size:.9em;color:#ccc}
+</style>
+</head>
+<body>
+
+<h1>♟ Derek's Chess</h1>
+<div class="sub">A feature-rich chess game built with Python &amp; Pygame-CE</div>
+
+<div class="card">
+  <h2>🎮 Game Modes</h2>
+  <p><span class="badge">SOLO</span> Challenge the AI at Easy, Medium or Hard difficulty powered by <strong>python-chess</strong>.</p>
+  <br>
+  <p><span class="badge">MULTIPLAYER</span> Local PvP with board flip each turn. Login to track your wins, losses and draws on the leaderboard.</p>
+</div>
+
+<div class="card">
+  <h2>⌨️ Controls</h2>
+  <table>
+    <tr><th>Action</th><th>Control</th></tr>
+    <tr><td>Select a piece</td><td>Left click on piece</td></tr>
+    <tr><td>Move a piece</td><td>Click highlighted destination</td></tr>
+    <tr><td>Flip board</td><td><kbd>F</kbd></td></tr>
+    <tr><td>Quit / Back</td><td><kbd>ESC</kbd></td></tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>⏱ Time Controls</h2>
+  <div class="row">
+    <span class="pill">⚡ Bullet — 1 min</span>
+    <span class="pill">🔥 Blitz — 3 min</span>
+    <span class="pill">🔥 Blitz — 5 min</span>
+    <span class="pill">🚀 Rapid — 10 min</span>
+    <span class="pill">♟ Classical — 15 min</span>
+    <span class="pill">∞ No Timer</span>
+  </div>
+</div>
+
+<div class="card">
+  <h2>🏆 Scoring</h2>
+  <table>
+    <tr><th>Result</th><th>Record</th></tr>
+    <tr><td>Win by checkmate</td><td>+1 Win</td></tr>
+    <tr><td>Win on time</td><td>+1 Win</td></tr>
+    <tr><td>Loss</td><td>+1 Loss</td></tr>
+    <tr><td>Draw / Stalemate</td><td>+1 Draw</td></tr>
+  </table>
+</div>
+
+<div class="card">
+  <h2>👨‍💻 Credits</h2>
+  <table>
+    <tr><td>Made by</td><td><strong>Derek</strong></td></tr>
+    <tr><td>Chess engine</td><td><a href="https://python-chess.readthedocs.io" target="_blank">python-chess</a></td></tr>
+    <tr><td>Piece graphics</td><td><a href="https://github.com/lichess-org/lila/tree/master/public/piece/cburnett" target="_blank">Lichess — cburnett set</a></td></tr>
+    <tr><td>Sound effects</td><td><a href="https://github.com/lichess-org/lila/tree/master/public/sound/standard" target="_blank">Lichess standard sounds</a></td></tr>
+    <tr><td>Built with</td><td>Python 3.12 · Pygame-CE 2.5.7</td></tr>
+  </table>
+</div>
+
+</body>
+</html>
